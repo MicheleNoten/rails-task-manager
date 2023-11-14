@@ -1,7 +1,14 @@
-<%= form_with model: @task do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.submit "Create Task" %>
-<% end %>
+<div class = "container">
+<h2> Fill in this form to add a new task 🙌</h2>
+<div class="card">
+  <div class="card-body">
+    <%= form_with model: @task do |f| %>
+    <p><%= f.label :title %></p>
+    <p><%= f.text_field :title %></p>
+    <p> <%= f.label :details %></p>
+    <p> <%= f.text_field :details %></p>
+    <p><%= f.submit "Create Task" %></p>
+    <% end %>
+  </div>
+</div>
+</div>
